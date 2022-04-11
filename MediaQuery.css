@@ -28,12 +28,13 @@
         width: 100%;
         height: 0;
         background-color: #fff;
+        opacity: 0;
         position: absolute;
         top: 100px;
         left: 0;
         right: 0;
         z-index: 999;
-        transition: .5s;
+        transition: .8s;
         overflow: hidden;
     }
     .naw_ul .naw_li {
@@ -49,13 +50,19 @@
     }
     #checknaw:checked ~ .rightnaw {
         height: auto;
-        transition: .5s;
+        transition: .8s;
+        opacity: 1;
+    }
+    .bottomcounter {
+        flex-direction: column;
+    }
+    .count_div {
+        width: 100%;
+        border-bottom: 1px solid rgba(75, 75, 75, 0.404);
+        border-left: 0;
     }
 } 
 @media only screen and (max-width: 580px) {
-    /* .wiewport {
-        background-position: -600px center;
-    } */
     .center_name {
         width: 100%;
     }
