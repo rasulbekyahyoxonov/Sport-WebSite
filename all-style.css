@@ -1,0 +1,232 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", "Open Sans", "Arial", sans-serif;
+    line-height: 28px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+::selection {
+    background: transparent;
+    color: #fff;
+}
+
+/*-------------------------wiewport------------------------------*/
+.wiewport {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./pictures/Firth.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.conteiner {
+    max-width: 1160px;
+    margin: auto;
+    height: auto;
+    padding: 0 20px;
+}
+.nawbar {
+    width: 100%;
+    height: 100px;
+}
+.nawbar .leftnaw {
+    height: 100px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.leftnaw .leftnaw_h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+.rightnaw {
+    float: right;
+    height: 100px;
+}
+#checknaw {
+    display: none;
+}
+.hamburger_menu {
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    float: right;
+    margin-top: 25px;
+}
+.bardiv {
+    width: auto;
+    height: auto;
+    transform: rotate(-180deg);
+    transition: .5s;
+}
+.bar {
+    width: 1.5rem;
+    height: 1.5px;
+    border-radius: 2px;
+    background-color: #ececec;
+    position: relative;
+}
+.bar:before,
+.bar:after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #eee;
+    transition: 0.3s;
+}
+.bar::before {
+    transform: translateY(-9px);
+}
+.bar::after {
+    transform: translateY(9px);
+}
+#checknaw:checked ~ label .bardiv {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+#checknaw:checked ~ label .bar {
+    transform: rotate(360deg);
+    background-color: transparent;
+}
+#checknaw:checked ~ label .bar::before {
+    transform: rotate(45deg);
+}
+#checknaw:checked ~ label .bar:after {
+    transform: rotate(-45deg);
+}
+.naw_ul {
+    height: 100%;
+    display: block;
+}
+
+.naw_ul .naw_li {
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.naw_ul .naw_li .naw_a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 20px;
+    display: block;
+}
+
+.xme {
+    color: #fed92e !important;
+}
+
+.crc {
+    clear: both;
+}
+
+.center_name {
+    width: 80%;
+    height: 100%;
+    float: left;
+    padding: 85px 0;
+}
+
+.all_h1 {
+    font-size: 80px;
+    font-weight: 800;
+    color: #fed92e;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+
+.plus {
+    color: #fff;
+}
+
+.all_p {
+    margin-right: 450px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.link_us {
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 24px;
+    background-color: #fed92e;
+    transition: .3s;
+}
+
+.link_us a {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.link_us:hover {
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/*-------------------------wiewport end------------------------------*/
+/*-------------------------energetic------------------------------*/
+.energetic {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./pictures/Second.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    -moz-box-align: center;
+}
+
+.center_name2 {
+    text-align: right;
+    float: right;
+    padding: 85px 0;
+}
+
+.energiy_h1 {
+    color: #fe2f3e;
+    float: right;
+}
+
+.energiy_p {
+    margin-right: 0 !important;
+    margin-left: 450px;
+}
+
+.link_us2 {
+    background-color: #fe2f3e;
+}
+
+.link_us2:hover.link_us2 a {
+    color: #000 !important;
+    transition: .3s;
+}
+
+.link_us2 a {
+    color: #fff;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+/*-------------------------energetic end------------------------------*/
