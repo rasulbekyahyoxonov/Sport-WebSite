@@ -17,6 +17,18 @@ ScrollReveal().reveal('.minicounter',{delay: 300, origin: 'bottom'});
 ScrollReveal().reveal('.left',{delay: 200, origin: 'bottom'});
 ScrollReveal().reveal('.midle',{delay: 400, origin: 'bottom'});
 ScrollReveal().reveal('.right',{delay: 600, origin: 'bottom'});
+ScrollReveal().reveal('.leftperson',{delay: 200, origin: 'bottom'});
+ScrollReveal().reveal('.middleperson',{delay: 400, origin: 'bottom'});
+ScrollReveal().reveal('.rightperson',{delay: 600, origin: 'bottom'});
+ScrollReveal().reveal('.all_touch',{delay: 600, origin: 'bottom'});
+ScrollReveal().reveal('.card_footer1',{delay: 200, origin: 'bottom'});
+ScrollReveal().reveal('.card_footer2',{delay: 350, origin: 'bottom'});
+ScrollReveal().reveal('.card_footer3',{delay: 450, origin: 'bottom'});
+ScrollReveal().reveal('.card_footer4',{delay: 600, origin: 'bottom'});
+ScrollReveal().reveal('.fa-facebook-f',{delay: 400, origin: 'bottom'});
+ScrollReveal().reveal('.fa-instagram',{delay: 500, origin: 'bottom'});
+ScrollReveal().reveal('.fa-youtube',{delay: 600, origin: 'bottom'});
+ScrollReveal().reveal('.fa-telegram-plane',{delay: 700, origin: 'bottom'});
 
 // counter
 
