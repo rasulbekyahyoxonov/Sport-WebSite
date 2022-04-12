@@ -1,3 +1,10 @@
+window.addEventListener ("scroll", function(){
+    let topnawbar = document.querySelector(".nawbar");
+    topnawbar.classList.toggle("sticky", window.scrollY > 150);
+})
+
+// sticky nawbar
+
 ScrollReveal ({
     reset: false,
     distance: '100px',
@@ -6,7 +13,10 @@ ScrollReveal ({
 
 ScrollReveal().reveal('.center_name',{delay: 300, origin: 'left'});
 ScrollReveal().reveal('.center_name2',{delay: 300, origin: 'right'});
-ScrollReveal().reveal('.topcounter',{delay: 300, origin: 'bottom'});
+ScrollReveal().reveal('.minicounter',{delay: 300, origin: 'bottom'});
+ScrollReveal().reveal('.left',{delay: 200, origin: 'bottom'});
+ScrollReveal().reveal('.midle',{delay: 400, origin: 'bottom'});
+ScrollReveal().reveal('.right',{delay: 600, origin: 'bottom'});
 
 // counter
 
@@ -23,7 +33,7 @@ counters.forEach((counter) => {
 
         if (c < target) {
             counter.innerText = `${Math.ceil(c + increment)}`
-            setTimeout(updateCounter, 50);
+            setTimeout(updateCounter, 80);
         }
         else {
             counter.innerText = target;
