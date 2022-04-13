@@ -13,6 +13,7 @@ ScrollReveal ({
 
 ScrollReveal().reveal('.center_name',{delay: 300, origin: 'left'});
 ScrollReveal().reveal('.center_name2',{delay: 300, origin: 'right'});
+ScrollReveal().reveal('.center_name3',{delay: 300, origin: 'bottom'});
 ScrollReveal().reveal('.minicounter',{delay: 300, origin: 'bottom'});
 ScrollReveal().reveal('.left',{delay: 200, origin: 'bottom'});
 ScrollReveal().reveal('.midle',{delay: 400, origin: 'bottom'});

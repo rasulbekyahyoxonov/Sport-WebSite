@@ -194,6 +194,7 @@ a {
     line-height: 1.2;
     letter-spacing: -2px;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .plus {
@@ -549,3 +550,53 @@ a {
     color: #1da1f2;
 }
 /*-------------------------footer end------------------------------*/
+
+/*-------------------------About page------------------------------*/
+.wiewport2 {
+    background-image: url('./pictures/abt-second.jpg');
+}
+.center_flex2 {
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+.center_name3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.about_h1 {
+    width: 70%;
+}
+.mini_center2 {
+    width: 50%;
+    float: left;
+}
+.about_p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.learn-more {
+    color: #fed92e;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.learn-more::before {
+    content: "";
+    display: inline-block;
+    border-bottom: 2px solid;
+    width: 1.5rem;
+    background-color: #fed92e;
+    margin-right: 1.125rem;
+    vertical-align: middle;
+    transition: .2s;
+}
+.learn-more:hover.learn-more::before{
+    width: 2.5rem;
+    transition: .2s;
+}
+/*-------------------------About page end------------------------------*/
