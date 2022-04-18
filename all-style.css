@@ -112,7 +112,7 @@ a {
 }
 .bar {
     width: 1.5rem;
-    height: 1.5px;
+    height: 1.3px;
     border-radius: 2px;
     background-color: #ececec;
     position: relative;
@@ -554,11 +554,11 @@ a {
 /*-------------------------About page------------------------------*/
 .wiewport2 {
     background-image: url('./pictures/abt-second.jpg');
+    background-position: 70% 100%;
 }
 .center_flex2 {
     width: 100%;
     height: 100vh;
-    float: left;
 }
 .center_name3 {
     width: 100%;
@@ -598,5 +598,121 @@ a {
 .learn-more:hover.learn-more::before{
     width: 2.5rem;
     transition: .2s;
+}
+
+.stats {
+    height: auto;
+    background-color: #151515;
+    padding: 6rem 0;
+}
+.stats.sticky {
+    background-color: #000;
+}
+.flex_stats {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.lrt {
+    padding: 25px;
+    width: 50%;
+}
+.rightstats {
+    display: flex;
+    align-items: center;
+}
+.stats_h1 {
+    color: aqua;
+}
+.proogres_bar {
+    width: 100%;
+    height: auto;
+}
+.mini_proogres {
+    margin-bottom: 20px;
+}
+.proogres_p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.skill_bar {
+    width: 100%;
+    height: 12px;
+    background: #3B3B3B;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.expend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    z-index: 2;
+    transition: 2s;
+}
+.expend.sticky {
+    width: 90% !important;
+}
+.expend2.sticky {
+    width: 86% !important;
+}
+.expend3.sticky {
+    width: 97% !important;
+}
+.expend4.sticky {
+    width: 87% !important;
+}
+
+.all_grid {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.mini_grid {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.mini_grid img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.moudlediv, .moudlehover {
+    background: rgba(0, 0, 0, 0.37);
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+.moudlehover {
+    margin-top: 400px;
+}
+.mini_grid:hover .moudlediv {
+    top: -100% !important;
+    background: rgba(0, 0, 0, 0.733);
+}
+.mini_grid:hover .moudlehover {
+    margin-top: 0;
+    background: rgba(0, 0, 0, 0.733);
 }
 /*-------------------------About page end------------------------------*/

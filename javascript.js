@@ -2,7 +2,22 @@ window.addEventListener ("scroll", function(){
     let topnawbar = document.querySelector(".nawbar");
     topnawbar.classList.toggle("sticky", window.scrollY > 150);
 })
-
+window.addEventListener ("scroll", function(){
+    let topnawbar = document.querySelector(".expend");
+    topnawbar.classList.add("sticky", window.scrollY > 200);
+})
+window.addEventListener ("scroll", function(){
+    let topnawbar = document.querySelector(".expend2");
+    topnawbar.classList.add("sticky", window.scrollY > 200);
+})
+window.addEventListener ("scroll", function(){
+    let topnawbar = document.querySelector(".expend3");
+    topnawbar.classList.add("sticky", window.scrollY > 200);
+})
+window.addEventListener ("scroll", function(){
+    let topnawbar = document.querySelector(".expend4");
+    topnawbar.classList.add("sticky", window.scrollY > 200);
+})
 // sticky nawbar
 
 ScrollReveal ({
@@ -30,6 +45,9 @@ ScrollReveal().reveal('.fa-facebook-f',{delay: 400, origin: 'bottom'});
 ScrollReveal().reveal('.fa-instagram',{delay: 500, origin: 'bottom'});
 ScrollReveal().reveal('.fa-youtube',{delay: 600, origin: 'bottom'});
 ScrollReveal().reveal('.fa-telegram-plane',{delay: 700, origin: 'bottom'});
+ScrollReveal().reveal('.leftstats',{delay: 700, origin: 'bottom'});
+ScrollReveal().reveal('.rightstats',{delay: 700, origin: 'bottom'});
+
 
 // counter
 

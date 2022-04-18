@@ -1,9 +1,4 @@
-@media only screen and (max-width: 1280px){
-    .content_naw {
-        max-width: 940px;
-        margin: auto;
-    }
-}
+
 @media only screen and (max-width: 980px) {
     .conteiner {
         max-width: 740px;
@@ -16,6 +11,9 @@
     }
     .energiy_p {
         margin-left: 100px;
+    }
+    .all_grid {
+        grid-template-columns: 50% 50%;
     }
 }
 @media only screen and (max-width: 780px) {
@@ -34,7 +32,7 @@
         left: 0;
         right: 0;
         z-index: 999 !important;
-        transition: .8s;
+        transition: .4s;
         overflow: hidden;
     }
     .naw_ul .naw_li {
@@ -49,7 +47,7 @@
         font-weight: 500;
     }
     #checknaw:checked ~ .rightnaw {
-        transition: .8s;
+        transition: .6s;
         opacity: 1;
     }
     .nawbar.sticky .rightnaw {
@@ -99,6 +97,37 @@
     }
     .card_footer {
         width: 100%;
+    }
+    .center_flex2 {
+        height: auto;
+    }
+    .center_name3 {
+        height: auto;
+        padding-top: 130px;
+    }
+    .about_h1 {
+        width: 100%;
+        font-size: 30px !important;
+        margin-bottom: 40px;
+    }
+    .center_name3 {
+        flex-direction: column;
+    }
+    .mini_center2 {
+        width: 100%;
+    }
+    .flex_stats {
+        flex-direction: column;
+    }
+    .lrt {
+        width: 100%;
+    }
+    .stats_h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .all_grid {
+        grid-template-columns: 100%;
     }
 } 
 @media only screen and (max-width: 580px) {
