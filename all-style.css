@@ -39,14 +39,14 @@ a {
 .nawbar {
     width: 100%;
     height: 100px;
+    transition: .4s;
+    z-index: 9999;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    transition: .4s;
-    z-index: 9999;
 }
 .nawbar.sticky {
+    position: fixed;
     background-color: #fff;
     height: 70px;
     transition: .4s;
@@ -102,7 +102,7 @@ a {
     cursor: pointer;
     display: none;
     float: right;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 .bardiv {
     width: auto;
@@ -112,7 +112,7 @@ a {
 }
 .bar {
     width: 1.5rem;
-    height: 1.3px;
+    height: 1.2px;
     border-radius: 2px;
     background-color: #ececec;
     position: relative;
@@ -552,6 +552,7 @@ a {
 /*-------------------------footer end------------------------------*/
 
 /*-------------------------About page------------------------------*/
+/*-------------------------wiewport2------------------------------*/
 .wiewport2 {
     background-image: url('./pictures/abt-second.jpg');
     background-position: 70% 100%;
@@ -599,7 +600,8 @@ a {
     width: 2.5rem;
     transition: .2s;
 }
-
+/*-------------------------wiewport2 end------------------------------*/
+/*-------------------------Stats------------------------------*/
 .stats {
     height: auto;
     background-color: #151515;
@@ -654,21 +656,25 @@ a {
     border-radius: 8px;
     background-color: #fff;
     z-index: 2;
-    transition: 2s;
 }
-.expend.sticky {
-    width: 90% !important;
+.expend1.sticky2 {
+    width: 90%;
+    transition: 2.5s ease-in-out;
 }
-.expend2.sticky {
-    width: 86% !important;
+.expend2.sticky2 {
+    width: 86%;
+    transition: 3s ease-in-out;
 }
-.expend3.sticky {
-    width: 97% !important;
+.expend3.sticky2 {
+    transition: 3.5s ease-in-out;
+    width: 97%;
 }
-.expend4.sticky {
-    width: 87% !important;
+.expend4.sticky2 {
+    transition: 4s ease-in-out;
+    width: 87%;
 }
-
+/*-------------------------Stats end------------------------------*/
+/*-------------------------griddiv------------------------------*/
 .all_grid {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
@@ -715,4 +721,179 @@ a {
     margin-top: 0;
     background: rgba(0, 0, 0, 0.733);
 }
+/*-------------------------griddiv end------------------------------*/
+/*-------------------------conveniences------------------------------*/
+.conveniences {
+    padding: 6rem 0;
+    background: #151515;
+}
+.convenience_fx {
+    display: flex;
+    flex-direction: row;
+}
+.convenience_col {
+    width: 50%; 
+    padding: 0 25px;
+    margin: 25px 0;
+    display: flex;
+}
+.convenience_span {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-right: 30px;
+    position: relative;
+    background: rgba(50,50,50,1);
+    border-radius: 50%;
+}
+.convenience_span .cnvico {
+    color: aqua;
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cnv_h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.cnv_p {
+    color: #999;
+    line-height: 1.6;
+}
+/*-------------------------conveniences end------------------------------*/
+/*-------------------------checkout, star------------------------------*/
+.checkout {
+    background-image: url('pictures/about-page-gallery.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6rem 0;
+}
+.checkout_div {
+    margin-left: 500px;
+    text-align: right;
+}
+.checkout_p {
+    margin-left: 200px;
+}
+
+.best {
+    background-color: #151515;
+    padding: 6rem 0;
+}
+.best_flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.col_best {
+    width: 33.33%;
+}
+.fa-star {
+    font-size: 35px;
+    color: #fe2f3e;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.best_h1 {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.best_h4 {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+/*-------------------------checkout, star end------------------------------*/
 /*-------------------------About page end------------------------------*/
+
+/*-------------------------Trainers page------------------------------*/
+.wiewport3 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.301)),  url('pictures/Fourth-Pricing.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+.trainers {
+    background-color: #151515;
+}
+.trainers_flex {
+    display: flex;
+}
+.trainers_flex2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.cool_trainers {
+    width: 50%;
+}
+.trainers_div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.trainers_name {
+    padding: 150px 100px;
+}
+.trainers_h1 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.trainers_p {
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.str {
+    color: #fff;
+}
+.myico {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.myico i {
+    color: #fff;
+    font-size: 20px;
+    transform: none !important;
+    opacity: 1 !important;
+    transition: .2s;
+}
+.myico:hover .awe1{
+    color: #1da1f2;
+}
+.myico:hover .awe2 {
+    color: #06cbe6;
+}
+.myico:hover .awe3 {
+    color: rebeccapurple;
+}
+.myico:hover .awe4 {
+    color: #1A91CC;
+}
+.book {
+    background-image: url('pictures/Sixth-team.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6rem 0;
+    height: 600px;
+}
+.book_name {
+    width: 60%;
+}
+.book_p {
+    margin-left: 0 !important;
+    margin-right: 200px !important;
+}
+/*-------------------------Trainers page end------------------------------*/

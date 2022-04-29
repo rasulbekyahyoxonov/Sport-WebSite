@@ -3,20 +3,20 @@ window.addEventListener ("scroll", function(){
     topnawbar.classList.toggle("sticky", window.scrollY > 150);
 })
 window.addEventListener ("scroll", function(){
-    let topnawbar = document.querySelector(".expend");
-    topnawbar.classList.add("sticky", window.scrollY > 200);
+    let topnawbar = document.querySelector(".expend1");
+    topnawbar.classList.add("sticky2", window.scrollY);
 })
 window.addEventListener ("scroll", function(){
     let topnawbar = document.querySelector(".expend2");
-    topnawbar.classList.add("sticky", window.scrollY > 200);
+    topnawbar.classList.add("sticky2", window.scrollY);
 })
 window.addEventListener ("scroll", function(){
     let topnawbar = document.querySelector(".expend3");
-    topnawbar.classList.add("sticky", window.scrollY > 200);
+    topnawbar.classList.add("sticky2", window.scrollY);
 })
 window.addEventListener ("scroll", function(){
     let topnawbar = document.querySelector(".expend4");
-    topnawbar.classList.add("sticky", window.scrollY > 200);
+    topnawbar.classList.add("sticky2", window.scrollY);
 })
 // sticky nawbar
 
@@ -27,7 +27,7 @@ ScrollReveal ({
 });
 
 ScrollReveal().reveal('.center_name',{delay: 300, origin: 'left'});
-ScrollReveal().reveal('.center_name2',{delay: 300, origin: 'right'});
+ScrollReveal().reveal('.center_name2',{delay: 300, origin: 'bottom'});
 ScrollReveal().reveal('.center_name3',{delay: 300, origin: 'bottom'});
 ScrollReveal().reveal('.minicounter',{delay: 300, origin: 'bottom'});
 ScrollReveal().reveal('.left',{delay: 200, origin: 'bottom'});
@@ -57,8 +57,8 @@ counters.forEach((counter) => {
     counter.innerText = '0';
     
     const updateCounter = () => {
-        const target = +counter.getAttribute('data-target');
-        const c = + counter.innerText;
+        const target =+ counter.getAttribute('data-target');
+        const c =+ counter.innerText;
 
         const increment = target / 250;
 

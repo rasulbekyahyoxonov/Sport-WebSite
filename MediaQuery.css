@@ -15,6 +15,12 @@
     .all_grid {
         grid-template-columns: 50% 50%;
     }
+    .checkout_div {
+        margin-left: 0;
+    }
+    .book_name {
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 780px) {
     .hamburger_menu {
@@ -129,6 +135,25 @@
     .all_grid {
         grid-template-columns: 100%;
     }
+    .convenience_fx {
+        flex-direction: column;
+    }
+    .convenience_col {
+        width: 100%;
+    }
+    .best_flex {
+        flex-direction: column;
+    }
+    .col_best {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .trainers_flex, .trainers_flex2 {
+        flex-direction: column;
+    }
+    .cool_trainers {
+        width: 100%;
+    }
 } 
 @media only screen and (max-width: 580px) {
     .center_name {
@@ -148,4 +173,21 @@
     .person_p1 {
         width: 100%;
     }
+    .fa-star {
+        font-size: 28px;
+    }
+    .best_h1 {
+        font-size: 22px;
+    }
+    .best_h4 {
+        font-size: 18px;
+    }
+    .book_p  {
+        margin-right: 100px !important;
+    }
 }
+@media only screen and (max-width: 280px) {
+    * {
+        word-break: break-all;
+    }
+} 
