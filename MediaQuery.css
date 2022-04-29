@@ -185,6 +185,9 @@
     .book_p  {
         margin-right: 100px !important;
     }
+    .trainers_name {
+        padding: 100px 40px;
+    }
 }
 @media only screen and (max-width: 280px) {
     * {
