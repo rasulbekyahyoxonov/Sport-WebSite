@@ -66,6 +66,9 @@
         transition: .6s;
         display: block;
     }
+    #checknaw:checked / .nawbar {
+        background-color: #fff;
+    }
     .nawbar.sticky .rightnaw {
         height: auto;
     }
